@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: lawngreen;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 28px;
+    text-shadow: 0 0 5px #000;
+    font-family: 'Poppins', sans-serif;
+
+}
+.logo{
+    color: white;
+    
+}
+.logo span{
+    color: #000;
+}
+.menu{
+    color: white;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: grey;
+    background-image: url(./imagenes/pumpkin-gb76306195_640.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.call{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+.call h1{
+    color: lawngreen;
+    margin-bottom: 20px;
+}
+.call p{
+    margin-bottom: 20px;
+}
+.call a{
+    text-decoration: none;
+    color: white;
+    background-color: lawngreen;
+    text-shadow: 0 0 5px #000;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+h2{
+    background-color:lawngreen;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 0 0 5px black;
+    padding: 10px;
+}
+
+.nosotros{
+    width: 100%;
+    min-height: 350px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nosotros .nleft{
+background-image: url(./imagenes/tree-ge1b876f1d_640.jpg);
+height: 350px;
+width: 100%;
+background-size: cover;
+background-position: center;
+}
+.nright h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.nright{
+    padding: 20px;
+}
+
+
+.galeria{
+    width: 100%;
+    height: auto;
+    background-color: lawngreen;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: repeat(8, 200px);
+    padding: 10px;
+    grid-gap: 10px;
+
+}
+.item{
+    background-color: blue;
+    border: 2px solid black;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    /* filter: grayscale(100%); */
+   }
+.item:hover{
+    /* filter: grayscale(0%); */
+    transform: scale(1.1);
+    transition: all 0.9s;
+}
+
+.item1{
+    background-image: url(./imagenes/bird-gaca4ffbdf_640.jpg);
+}
+.item2{
+    background-image: url(./imagenes/cat-g6c3bb55db_640.jpg);
+    
+}
+.item3{
+    background-image: url(./imagenes/chameleon-g2f26dd568_640.jpg);
+}
+.item4{
+    background-image: url(./imagenes/discus-fish-g051b17fda_640.jpg);
+    
+}
+.item5{
+    background-image: url(./imagenes/fox-gcb70ca8fa_640.jpg);
+}
+.item6{
+    background-image: url(./imagenes/leopard-gcea58797b_640.jpg);
+}
+.item7{
+    background-image: url(./imagenes/owl-g2181b007a_640.jpg);
+}
+.item8{
+    background-image: url(./imagenes/tiger-g14733a824_640.jpg); 
+}
+
+.pie{
+    width: 100%;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+.pie p{
+    margin-bottom: 12px;
+}
+
+.pie i{
+    color: lawngreen;
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+
+@media only screen and (min-width: 480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 200);
+    }
+
+.item1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.item2{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.item3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.item4{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.item5{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.item6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.item7{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+ .item8{
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
+}
+@media only screen and (min-width: 1024px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+    }
+}
